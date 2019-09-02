@@ -1,11 +1,24 @@
-p {
-	color: #666666;
-    font-family: Helvetica, Arial, sans-serif;
+body {
+	background-color: #FFB6C1
 }
+
+
 
 h1 {
     font-family: Georgia, "Times New Roman", serif;
 }
+
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+
+
+p {
+	color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 
 #container{
     width: 26%;
