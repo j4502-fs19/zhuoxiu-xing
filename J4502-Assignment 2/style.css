@@ -3,25 +3,27 @@ body {
 }
 
 
-
 h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Arial Black, Arial, sans-serif;
+		font-size: 5em;
+		text-align: center;
 }
 
+
 h2 {
-	font-family: Georgia, "Times New Roman", serif;
+	font-family: Arial Black, Arial, sans-serif;
 }
 
 
 
 p {
 	color: #FFFFFF;
-    font-family: Helvetica, Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #container{
-    width: 26%;
+    width: 95%;
     margin: 0 auto;
 }
 
