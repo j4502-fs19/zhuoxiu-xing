@@ -1,24 +1,39 @@
 body {
+	font-size: 1em;
+	align-items: center;
 	background-color: #FFB6C1
 }
 
 
 h1 {
     font-family: Arial Black, Arial, sans-serif;
-		font-size: 5em;
+		font-size: 4em;
 		text-align: center;
 }
 
 
 h2 {
 	font-family: Arial Black, Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
 }
 
+h3 {
+	font-family: Arial Black, Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
 
+h4 {
+	font-family: Arial Black, Arial, sans-serif;
+	font-size: 1em;
+	text-align: center;
+}
 
 p {
-	color: #FFFFFF;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:  Georgia, "Times New Roman", serif;
+	text-align: center;
+	font-size: 0.8em;
 }
 
 
@@ -35,40 +50,36 @@ p {
 #nav li {
     margin: 0;
     padding: 0;
-	  border-bottom: 1px solid #ccc;
+	  border-bottom: 3px solid #FFE4E1;
+		text-align: center;
 }
 
-#nav a:link, #nav a:visited {
+#nav a:link {
 	  display:block;
     color: #ffffff;
-    background-color: #98bf21;
+    background-color: #F08080;
     font-weight: bold;
     text-align:center;
-    text-decoration: none;
-    padding: 4px;
+    padding: 1px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
+#nav a:visited {
+	display: block;
+	color: #FFFACD;
+	background-color:#F08080;
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 1px
+}
+
 #nav a:hover, #nav a:active {
-    background-color: #7a991a;
+	color: black;
+	background-color: #FFE4E1;
 }
 
-.caption {
-    color: black;
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-size: 0.8em;
-    margin-top: 0;
-    text-align: right;
-}
-
-#footer {
-    color: black;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.8em;
-    border-top: 1px solid black;
-}
 
 img {
 	border: none;
+	align-items:
 }
