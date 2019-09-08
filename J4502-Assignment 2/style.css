@@ -79,3 +79,10 @@ img {
 	border: none;
 	align-items:
 }
+
+#footer {
+	color: Black;
+	border-top: 1px solid black;
+	font-size: 0.6em;
+	font-family: 'Noto Serif', serif;
+}
