@@ -13,19 +13,19 @@ h1 {
 
 
 h2 {
-	font-family: Arial Black, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	text-align: center;
 }
 
 h3 {
-	font-family: Arial Black, Arial, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	text-align: center;
 }
 
 h4 {
-	font-family: Arial Black, Arial, sans-serif;
+	font-family:'Open Sans', sans-serif;
 	font-size: 1em;
 	text-align: center;
 }
@@ -74,10 +74,9 @@ p {
 	background-color: #FFE4E1;
 }
 
-
 img {
 	border: none;
-	align-items:
+	align-items: center;
 }
 
 #footer {
