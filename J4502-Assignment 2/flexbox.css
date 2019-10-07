@@ -12,7 +12,6 @@
     flex-direction: row;
     justify-content: space-around;
   align-items: flex-start;}
-
 }
 
 
@@ -31,5 +30,5 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-    align-items: baseline;}
+    align-content: space-around;}
 }
