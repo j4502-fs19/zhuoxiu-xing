@@ -85,3 +85,16 @@ img {
 	font-size: 0.6em;
 	font-family: 'Noto Serif', serif;
 }
+
+
+
+.container {
+    display: flex;
+    flex-direction:row;
+		flex-direction: column-reverse;
+  }
+
+.container {
+  	display: flex;
+  	flex-wrap: wrap;
+  }
