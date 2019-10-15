@@ -1,5 +1,5 @@
 #container {
-	background-color: #DCDCDC;
+	background-color: white;
 	width: 95%;
 	margin: 0 auto;
 }
@@ -50,7 +50,6 @@ h4 {
 #nav a:link {
 	  display:block;
     color: #ffffff;
-    background-color: #F08080;
     font-weight: bold;
     text-align:center;
     padding: 0.5px;
@@ -59,7 +58,6 @@ h4 {
 
 #nav a:visited {
 	color: #FFFACD;
-	background-color:#F08080;
 }
 
 #nav a:hover, #nav a:active {
@@ -77,6 +75,9 @@ h4 {
 	border-top: 1px solid black;
 	font-size: 0.6em;
 	font-family: 'Noto Serif', serif;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 
 
@@ -84,7 +85,7 @@ h4 {
 @media screen and (min-width: 600px)
 {
     #container {
-    height: 200px;
+    height: 400px;
     width: 50%;
     max-width: 1000px;
     }
@@ -121,21 +122,20 @@ h4 {
 
 .images {
   display: flex;
-  flex-direction: column;
-  align-content: stretch;
+  flex-direction: row;
+  align-content: baseline;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 
-
-@media screen and (min-width:400px) {
+@media screen and (min-width:100px) {
 	.images {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: space-around;}
-    margin: 0;
+    align-content: space-around;
+		margin: 0;
     padding: 0;
     list-style: none;
     display: grid;
@@ -144,7 +144,7 @@ h4 {
     grid-template-areas:
         "a b c"
         "d e f"
-        "g h i";
+        "g h i"; }
 
 .image1 {
     grid-area: a;
@@ -188,7 +188,7 @@ h4 {
     border-radius: 1px;}
   }
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:600px) {
 	.images {
     flex-direction: row;
     justify-content: center;
