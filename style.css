@@ -13,7 +13,6 @@ h1 {
 h2 {
     font-family: 'Merriweather', serif;
 		font-size: 1em;
-		text-align: center;
 }
 
 h3 {
@@ -31,9 +30,6 @@ h4 {
 .paragraph {
 	width: 55%;
 	margin: 0 auto;
-}
-
-.paragraph {
 	font-family: 'Mansalva', cursive;
 	text-align: center;
 	font-size: 1.5em;
@@ -81,39 +77,21 @@ h4 {
 }
 
 
-
-@media screen and (min-width: 600px)
-{
-    #container {
-    height: 400px;
-    width: 50%;
-    max-width: 1000px;
-    }
-}
-
-
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+	display: flex;
+	flex-direction: column;
 }
 
-
-@media screen and (min-width:400px) {
+@media screen and (min-width:700px) {
 	.header {
     flex-direction: row;
-    justify-content: space-around;
-  align-items: flex-start;}
+		flex-wrap: wrap;
+    justify-content: space-between;
+		align-items: baseline;}
 }
 
-.paragraph {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:700px) {
 	.paragraph {
     flex-direction: row;
     justify-content: center;
@@ -122,16 +100,76 @@ h4 {
 
 .images {
   display: flex;
-  flex-direction: row;
-  align-content: baseline;
+  flex-direction: column;
+  align-content: center;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
-@media screen and (min-width:100px) {
+@media screen and (min-width:800px) {
 	.images {
-    flex-direction: column;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		align-content: space-around;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		grid-template-areas:
+				"a b"
+				"c d"
+				"e f"
+				"g h"
+				"i ." }
+
+.image1 {
+		grid-area: a;
+}
+
+.image2 {
+		grid-area: b;
+}
+
+.image3 {
+		grid-area: c;
+}
+
+.image4 {
+		grid-area: d;
+}
+
+.image5 {
+		grid-area: e;
+}
+.image6 {
+		grid-area: f;
+}
+
+.image7 {
+		grid-area: g;
+}
+
+.image8 {
+		grid-area: h;
+}
+
+.image9 {
+		grid-area: i;
+}
+
+.images li {
+		background-color: #B0C4DE;
+		border: 1px solid	#000000;
+		padding: 10px;
+		border-radius: 1px;}
+  }
+
+@media screen and (min-width:1000px) {
+	.images {
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-around;
@@ -188,10 +226,12 @@ h4 {
     border-radius: 1px;}
   }
 
-@media screen and (min-width:600px) {
-	.images {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;}
-  }
+
+	@media screen and (min-width: 1024px)
+	{
+	    #container {
+	    height: 200px;
+	    width: 50%;
+	    max-width: 1000px;
+	    }
+	}
