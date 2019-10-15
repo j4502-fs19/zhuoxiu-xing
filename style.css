@@ -71,9 +71,6 @@ h4 {
 	border-top: 1px solid black;
 	font-size: 0.6em;
 	font-family: 'Noto Serif', serif;
-	bottom: 0;
-	right: 0;
-	left: 0;
 }
 
 
@@ -167,6 +164,7 @@ h4 {
 		border-radius: 1px;}
   }
 
+
 @media screen and (min-width:1000px) {
 	.images {
     flex-direction: row;
@@ -227,10 +225,11 @@ h4 {
   }
 
 
-	@media screen and (min-width: 1024px)
+
+@media screen and (min-width: 1024px)
 	{
 	    #container {
-	    height: 200px;
+	    height: 400px;
 	    width: 50%;
 	    max-width: 1000px;
 	    }
