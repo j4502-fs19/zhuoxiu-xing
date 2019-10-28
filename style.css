@@ -33,6 +33,89 @@ h4 {
 	font-family: 'Mansalva', cursive;
 	text-align: center;
 	font-size: 1.5em;
+
+}
+/* Navbar container */
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+/* The dropdown container */
+.header {
+	display: block;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.header .dropbtn {
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn {
+		background-color: #B0C4DE;
+		border: 2px solid	white;
+		padding: 10px;
+		font-size: 1em;
+		cursor: pointer;
+	}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  background-color: white;
+	font-size: 1em;
+	color:	#87CEFA;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: lightblue;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
@@ -53,7 +136,7 @@ h4 {
 }
 
 #nav a:visited {
-	color: #FFFACD;
+	color: #1E90FF;
 }
 
 #nav a:hover, #nav a:active {
@@ -61,10 +144,13 @@ h4 {
 	background-color: #FFE4E1;
 }
 
+
+
 .images {
     padding: 0;
 	  list-style-type: none;
 }
+
 
 #footer {
 	color: Black;
@@ -74,47 +160,58 @@ h4 {
 }
 
 
-.header {
-	display: flex;
-	flex-direction: column;
-}
 
-@media screen and (min-width:700px) {
-	.header {
-    flex-direction: row;
-		flex-wrap: wrap;
+	/*.header {
+  	display: grid;
     justify-content: space-between;
-		align-items: baseline;}
-}
+		align-items: baseline;
+		grid-template-columns: 1fr,1fr,1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+		"a b c"; }
+
+		.home1 {
+				grid-area: a;
+		}
+
+		.home2 {
+				grid-area: b;
+		}
+
+		.home3 {
+				grid-area: c;
+		}
+
+	.home li {
+			background-color: #B0C4DE;
+			border: 2px solid	white;
+			padding: 10px;
+			border-radius: 5px;}
+	  }
+*/
 
 
-@media screen and (min-width:700px) {
-	.paragraph {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;}
-}
+/*media query mobile*/
 
-.images {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+@media screen and (min-width:1024px) {
+				.dropdown-content {
+         display: flex;
+				 flex-direction: row;
+				justify-content: space-around;
+				 background-color: lightblue;
+         padding: 0;
+         margin: 0;
+    		 font-family: 'Open Sans', sans-serif;
+         }
 
-@media screen and (min-width:900px) {
+
+
+@media screen and (min-width:600px){
 	.images {
-		flex-direction: row;
-		justify-content: flex-start;
-		flex-wrap: wrap;
-		align-content: center;
-		left: auto;
-		right: auto;
+		margin-right: 10px;
+		margin-left: 15px;
 		padding: 10px;
-		list-style: none;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
 		grid-gap: 10px;
 		grid-template-areas:
 				"a b"
@@ -162,20 +259,13 @@ h4 {
 		background-color: #B0C4DE;
 		border: 1px solid	#000000;
 		padding: 10px;
-		border-radius: 1px;}
+		border-radius: 5px;}
   }
 
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1024px) {
 	.images {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 10px;
-    list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     grid-template-areas:
         "a b c"
@@ -221,16 +311,5 @@ h4 {
     background-color: #ADD8E6;
     border: 2px solid	#000000;
     padding: 10px;
-    border-radius: 1px;}
+    border-radius: 5px;}
   }
-
-
-
-@media screen and (min-width: 1010px)
-	{
-	    #container {
-	    height: 400px;
-	    width: 50%;
-	    max-width: 1000px;
-	    }
-	}
