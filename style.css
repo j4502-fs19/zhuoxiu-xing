@@ -15,6 +15,10 @@ h2 {
 		font-size: 1.5em;
 }
 
+h5 {
+    font-family: 'Open Sans', sans-serif;
+		font-size: 0.5em;
+}
 
 .paragraph {
 	width: 55%;
@@ -73,8 +77,11 @@ h2 {
 
 #footer {
 	color: Black;
-	border-top: 1px solid black;
-	font-size: 0.6em;
+	margin-top: 50px;
+  bottom: 0;
+  text-align: center;
+	text-decoration: overline;
+	font-size: 1em;
 	font-family: 'Noto Serif', serif;
 }
 
@@ -89,10 +96,16 @@ h2 {
 
 
 /* aboutme page */
+#contact ul{
+	list-style-type: none;
+	font-size: 1.5em;
+	text-decoration: none;
+}
 
-
-
-
+.aboutme
+{
+	text-align: center;
+}
 
 /*media query mobile*/
 
