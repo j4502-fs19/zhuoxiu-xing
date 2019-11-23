@@ -11,8 +11,8 @@ h1 {
 }
 
 h2 {
-    font-family: 'Merriweather', serif;
-		font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+		font-size: 1.5em;
 }
 
 h3 {
@@ -157,6 +157,15 @@ h4 {
 	border-top: 1px solid black;
 	font-size: 0.6em;
 	font-family: 'Noto Serif', serif;
+}
+
+
+
+/* project page */
+
+.project
+{
+	text-align: center;
 }
 
 
